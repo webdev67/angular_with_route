@@ -14,33 +14,16 @@
     <script type="text/javascript" src="/scripts/jquery/dist/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/scripts/angular/angular.js"></script>
-    <script type="text/javascript" src="/scripts/angular-ui-router/release/angular-ui-router.js"></script>
-    <script type="text/javascript" src="/scripts/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
-    <script type="text/javascript" src="/scripts/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
     <link rel="stylesheet" type="text/css" href="/scripts/angular-ui-bootstrap/dist/ui-bootstrap-csp.css" />
-
-    <script type="text/javascript" src="/js/app.js"></script>
-    <script type="text/javascript" src="/js/controllers/articlesController.js"></script>
-    <script type="text/javascript" src="/js/filters/highlighterFilter.js"></script>
-    <script type="text/javascript" src="/js/controllers/navBarController.js"></script>
-    <script type="text/javascript" src="/js/controllers/searchController.js"></script>
-    <script type="text/javascript" src="/js/controllers/filterController.js"></script>
-    <script type="text/javascript" src="/js/services/articleService.js"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <script type="text/javascript" src="/scripts/requirejs/require.js" data-main="js/main"></script>
 
 </head>
 
-<body ng-app="app">
-
-    <!-- <div class="jumbotron">
-  <h1>test</h1>
-</div> -->
+<body>
     <div ui-view>
 
     </div>
-
-
 </body>
 
 </html>
