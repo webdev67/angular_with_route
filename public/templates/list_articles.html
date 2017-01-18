@@ -21,6 +21,5 @@
 </div>
 <div class="the_content" ng-repeat="article in articles">
   <h1>{{article.heading}}</h1>
-  {{article.guid}}
-...<a ui-sref="articlepreview({id:article.guid})">Read More</a>
+...<a ui-sref="articlepreview({id:article.guid})" ng-click="$root.recentArticle=article.heading">Read More</a>
 </div>

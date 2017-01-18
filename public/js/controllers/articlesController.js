@@ -1,5 +1,4 @@
-var articlesController = app.controller("articlesController", ['$scope', '$http', '$stateParams', '$sce', function($scope, $http, $stateParams, $sce) {
-    console.log($stateParams);
+var articlesController = app.controller("articlesController", ['$scope', '$http', '$stateParams', '$sce','$rootScope', function($scope, $http, $stateParams, $sce,$rootScope) {
     $scope.largeArticle = "";
     $scope.keywords = [];
     $http.get(app.endpoint).then(function(result) {
@@ -13,6 +12,7 @@ var articlesController = app.controller("articlesController", ['$scope', '$http'
         $http.get(app.endpoint + $stateParams.id).then(function(result) {
             $scope.largeArticle = "";
             $scope.keywords = [];
+
             for (var i = 0; i < result.data.text.length; i++) {
 
                 $scope.largeArticle += result.data.text[i].sentence;
