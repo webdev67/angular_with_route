@@ -6,6 +6,7 @@ requirejs.config({
     "angularUiRouter":"../scripts/angular-ui-router/release/angular-ui-router",
     "bootstrap":"../bootstrap",
     "uiBootstrap":"../scripts/angular-ui-bootstrap/dist/ui-bootstrap",
+    "uiBootstrapTpl":"../scripts/angular-ui-bootstrap/dist/ui-bootstrap-tpls",
     "articleService":"../js/services/articleService",
     "navbarController":"../js/controllers/navBarController",
     "highlighterFilter":"../js/filters/highlighterFilter",
@@ -21,6 +22,9 @@ requirejs.config({
     },
     "uiBootstrap":{
       deps:["angular"]
+    },
+    "uiBootstrapTpl":{
+      deps:["uiBootstrap"]
     }
   },
   name:"public/bootstrap"
